@@ -1,0 +1,1 @@
+Exposes `Meteor.loginWithAuth()` method.
