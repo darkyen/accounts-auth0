@@ -5,7 +5,11 @@ if (Meteor.isClient) {
     // support a callback without options
     if (! callback && typeof options === "function") {
       callback = options;
-      options = null;
+      options = {
+        authParams: {
+          
+        }
+      };
     }
 
     var credentialRequestCompleteCallback = Accounts.oauth.credentialRequestCompleteHandler(callback);
